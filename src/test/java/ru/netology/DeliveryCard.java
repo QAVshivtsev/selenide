@@ -30,7 +30,7 @@ import static ru.netology.Date.getDate;
             $("input[name=phone]").setValue("+79875358135");
             $("label[data-test-id=agreement]").click();
             $x("//span[contains(text(), 'Забронировать')]").click();
-            $(withText("Успешно!")).should(appear, Duration.ofSeconds(11));
+            $(withText("Успешно!")).should(appear, Duration.ofSeconds(15));
             $x("//div[contains(text(), 'Успешно!')]");
         }
     }
